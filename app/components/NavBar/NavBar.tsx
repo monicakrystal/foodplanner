@@ -9,7 +9,12 @@ const NavBar = () => {
       </div>
       <div className={styles.buttons}>
 <button> Recipes </button>
-<button> Calendar </button>        
+<button> Calendar </button> 
+<button> Expenses </button>     
+<button> Grocery Lists</button>
+<button> Notes</button>
+       
+
       </div>
     </div>
   )
