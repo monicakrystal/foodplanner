@@ -24,8 +24,11 @@ export default async function Page({ params }: RecipePageProps) {
             <h1>{recipe.title}</h1>
             <span>⭐️ ⭐️ ⭐️ ⭐️ ⭐️</span>
             <span>{recipe.labels.join(", ")}</span>
-        </div>
 
+        </div>
+<div className={styles.jump}>
+  <button>JUMP TO RECIPE</button>
+</div>
       <Image src={recipe.imageSrc} alt="Recipe Image"
         width={400}
         height={300} />
