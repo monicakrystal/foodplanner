@@ -8,13 +8,14 @@ import styles from "./RecipeThumbnail.module.css"
   - Displays a static recipe card with an image, title, and dietary labels.
 
   Current State:
-  - Now accepts props for title, image, and labels.
-  - Content is no longer hard-coded.
-  - fake example data for now
+  - Accepts props for title, image, and labels.
+  - Fake example data for now
 
   Future Improvements:
   - Wrap with <Link> to navigate to /recipes/[slug].
   - Add hover styling and reusable card layout.
+  - update labels to custom icons/ custom images
+  - when I press labels should I show other recipes of that sort?
 
   Notes:
   - Uses Next.js <Image> for optimized loading.
@@ -31,12 +32,17 @@ type RecipeThumbnailProps = {
 const RecipeThumbnail = ({ title, imageSrc, labels}: RecipeThumbnailProps) => {
   return (
   <div className={styles.container}>
+
+    <div className={styles.thumbnailImage}>
+      
+
       <Image
         src={imageSrc}
         alt="Meatballs"
         width={400}
         height={300}
       />
+          </div>
 
     <div className={styles.thumbnailDetails}>
         

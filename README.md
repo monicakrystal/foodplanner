@@ -41,6 +41,8 @@ public/
 
 - Build the main recipes page
   - Show a grid/list of recipe thumbnails
+  - next page & page numbers if there is more than 20
+  - 20 per page
   - Display title, tags (GF, Vegan, etc.), and maybe rating
 
 - Add filters 
@@ -112,6 +114,7 @@ public/
 # /recipes/[slug]
 
 - Create a recipe detail page for a single recipe
+  - fetch recipe from db
   - URL pattern like `/recipes/turkey-meatballs` or `/recipes/[slug]`
   - Show:
     - JUMP TO RECIPE button
@@ -144,6 +147,22 @@ public/
     - Users can rate 0–5 stars
     - Show average rating on the recipe page and recipe cards
 
+
+# /add-recipe
+
+  - page to add a recipe
+  - needs to add photo or just title?
+  - title
+  - special diet
+  - ingredients
+  - items needed to have
+  - cancel button
+  - draft 
+  - submit
+  - notes
+  - self rating
+  - post to db
+  
 
 # /calendar
 
