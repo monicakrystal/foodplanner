@@ -15,6 +15,18 @@ CREATE TABLE recipes (
   updated_at DATETIME DEFAULT NOW() ON UPDATE NOW()
 );
 
+# Slug Rules
+
+Current (single user / simple URLs):
+- Route: /recipes/[slug]
+- Slugs must be globally unique.
+- Example: "bamia", "bamia-2", "bamia-3"
+
+Future (if public / multi-user):
+- Route: /username/recipes/[slug]
+- Slugs only need to be unique per user.
+- DB constraint becomes UNIQUE(user_id, slug)
+
 Future Fields Needed
 
 - ingredients (JSON)
