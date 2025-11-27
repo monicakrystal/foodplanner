@@ -1,7 +1,7 @@
-import RecipeThumbnail from "../../components/RecipeThumbnail/RecipeThumbnail"
+
 import styles from "./pages.module.css"
 import { exampleRecipes } from "../../data/recipes"
-
+import RecipeThumbnail from "../../components/Recipes/RecipeThumbnail/RecipeThumbnail"
 
 
 const Page = () => {

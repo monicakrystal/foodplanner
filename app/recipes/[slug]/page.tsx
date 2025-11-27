@@ -1,5 +1,4 @@
-import Image from "next/image";
-import RecipeDetails from "../../../components/RecipeDetails/RecipeDetails";
+import RecipeDetails from "../../../components/Recipes/RecipeDetails/RecipeDetails";
 import { exampleRecipes } from "../../../data/recipes";
 import styles from "./page.module.css"
 
