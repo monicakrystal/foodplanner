@@ -1,9 +1,9 @@
-### Purpose ###
+# Purpose 
 
 a cute website for me to plan my meals & save my favorite recipes
 
 
-### Tech Stack ###
+# Tech Stack 
 
 - Next.js 15 (App Router)
 - React 19
@@ -11,7 +11,7 @@ a cute website for me to plan my meals & save my favorite recipes
 - CSS Modules
 
 
-### Folder Structure ##
+# Folder Structure 
 
 app/
   calendar/
@@ -35,7 +35,7 @@ public/
   Meatballs.png
 
 
-### PAGES Plan ###
+# PAGES Plan 
 
 # /recipes
 
@@ -76,6 +76,8 @@ public/
     - Dessert
     - Snack
     - Holiday ?
+    - Freezer Friendly
+    - Instant Pot
 
   - Sort by:
     - Title (A–Z)
@@ -107,7 +109,7 @@ public/
 
 
 
-## /recipes/[slug]
+# /recipes/[slug]
 
 - Create a recipe detail page for a single recipe
   - URL pattern like `/recipes/turkey-meatballs` or `/recipes/[slug]`
@@ -129,6 +131,8 @@ public/
     - owner can make it private or public to share with other users
     - show a lock if private or multiple people if public
     - nutriion details
+    - items needed? instant pot? oven? stove? no cook (like a salad)
+    - if found from a blog or tik tok add link or original creator
 
   
 
@@ -145,13 +149,40 @@ public/
 
 # /calendar
 
+  - keep track of my meals for the week and month
+  - cute responsive ui
+  - able to search by date
+  - able to add a recipe to the date
+  - able to delete a recipe from the date
+  - able to drag recipe from one day to other
+  - able to copy recipe or full day plan to another date
+  - make private or public or just private?
+  
+
 # /expenses
+
+  - keep track of grocery run total by date
+  - keep track of item cost; which store, date purchased
+  - able to track recipe cost?
+  - any other expenses? kitchen items.
 
 # /notes
 
+  - any personal notes (always private)
+
 # /grocery-lists
 
+  - keep track of grocery run lists
+  - generate list based on recipes chosen
+
 # /ingredients
+ 
+  - I want to keep track or ingredients I like; notes
+  - this is so I can find new recipes with ingredients I like
+  - preferences
+  - ingredients to avoid for search and explore page?
 
 # /explore
+
+ - when more users or public this is to find new recipes 
 
