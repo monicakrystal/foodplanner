@@ -1,8 +1,12 @@
+import RecipeThumbnail from "../components/RecipeThumbnail/RecipeThumbnail"
 
 
 const page = () => {
   return (
-    <div>page</div>
+    <div>
+
+      <RecipeThumbnail/>
+    </div>
   )
 }
 
