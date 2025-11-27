@@ -11,6 +11,9 @@
 }
 
 
-.buttons button {
-    padding: 10px;
+.buttons{
+display: flex;
+padding: 15px;
+gap: 20px;
 }
+
