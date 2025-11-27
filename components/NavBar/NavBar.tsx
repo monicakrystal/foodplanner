@@ -13,8 +13,6 @@ import styles from "./NavBar.module.css"
   - Uses Next.js <Link> for client-side navigation.
   - Styled using NavBar.module.css.
 
-  
-
   Notes / Future Improvements:
   - Create sublists for "Notes":
 
@@ -25,13 +23,15 @@ import styles from "./NavBar.module.css"
     Possibly show only in sublist "All Notes" & starred/favorite items by default.
     4-5 "starred/favorite" at most for a minimal look
 
-  - Update to cuter design; pink, cooler buttons, custom font, logo
-  
-  - Add login / log out page for privacy 
-
   - Make this responsive (collapse into hamburger menu on mobile).
 
   - Highlight active route using usePathname() from next/navigation.
+
+  - Update to cuter design; pink, cooler buttons, custom font, logo
+  
+  - Add login / log out page for privacy, profile, dashboard 
+
+
 */
 
 const NavBar = () => {
