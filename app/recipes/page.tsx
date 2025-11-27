@@ -26,14 +26,15 @@ const Page = () => {
       </div>
 
       <div className={styles.recipesContainer}>
-      
       {exampleRecipes.map((recipe) => (
 
         <RecipeThumbnail key={recipe.id} title={recipe.title}
-    imageSrc={recipe.imageSrc}
-    labels={recipe.labels}/>
-        ))}
+        imageSrc={recipe.imageSrc}
+        labels={recipe.labels}/>
+     
+      ))}
       </div>
+
     </div>
   )
 }
