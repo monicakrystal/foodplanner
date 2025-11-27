@@ -35,7 +35,7 @@ public/
   Meatballs.png
 
 
-# PAGES Plan 
+# Pages Plan 
 
 # /recipes
 
@@ -123,18 +123,16 @@ public/
     - Time / servings
     - able to adjust servind size
     - print button
-    - RATINGS stars owner rating & other public user rating?
+    - Ratings/stars (owner rating & other public user rating?)
     - other users can save it "add to favorites" or maybe "save this recipe"
     - can add to calendar
-    - if from somewhere save original link
-    - edit button for owner to edit it ( maybe user can edit it if they save it
+    - edit button for owner to edit it ( maybe user can adjust it to their liking if they save it )
     - owner can make it private or public to share with other users
     - show a lock if private or multiple people if public
     - nutriion details
     - items needed? instant pot? oven? stove? no cook (like a salad)
     - if found from a blog or tik tok add link or original creator
 
-  
 
 - User notes (private)
   - Let the user add their own notes to a recipe
@@ -143,7 +141,7 @@ public/
 - (Future / public features)
   - Comments section (when/if recipes become public/shared)
   - Ratings system:
-    - Users can rate 1–5 stars
+    - Users can rate 0–5 stars
     - Show average rating on the recipe page and recipe cards
 
 
@@ -165,6 +163,7 @@ public/
   - keep track of item cost; which store, date purchased
   - able to track recipe cost?
   - any other expenses? kitchen items.
+  - able to see daily costs, weekly, monthly.
 
 # /notes
 
@@ -172,17 +171,26 @@ public/
 
 # /grocery-lists
 
-  - keep track of grocery run lists
+  - keep track of grocery run lists 
+  - can see which recipes are referenced in that list
   - generate list based on recipes chosen
 
 # /ingredients
  
-  - I want to keep track or ingredients I like; notes
+  - I want to keep track or ingredients I like; add notes
   - this is so I can find new recipes with ingredients I like
-  - preferences
+  - my preferences
   - ingredients to avoid for search and explore page?
 
 # /explore
 
  - when more users or public this is to find new recipes 
+ - like pinterest but ONLY recipes
 
+
+
+# /profile
+  (when public not now)
+  - user profile
+  - able to follow
+  - comment? or maybe best just on recipes
