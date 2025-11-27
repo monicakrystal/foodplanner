@@ -10,9 +10,11 @@ const NavBar = () => {
       <div className={styles.buttons}>
 <button> Recipes </button>
 <button> Calendar </button> 
-<button> Expenses </button>     
+<button> Expenses </button>
+<button> Notes </button>     
 <button> Grocery Lists</button>
-<button> Notes</button>
+<button> Ingredients</button>
+<button> Explore</button>
        
 
       </div>
