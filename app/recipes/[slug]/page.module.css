@@ -1,0 +1,17 @@
+.recipeSlugContainer {
+    margin: 40px 25px;
+}
+
+.recipeTitle {
+    margin-bottom: 20px;
+}
+
+.recipeTitle h1 {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.recipeTitle span {
+    margin: 10px 0;
+    display: flex;
+}
