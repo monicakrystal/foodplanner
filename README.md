@@ -35,7 +35,7 @@ public/
   Meatballs.png
 
 
-### Plan ###
+### PAGES Plan ###
 
 # /recipes
 
@@ -141,3 +141,17 @@ public/
   - Ratings system:
     - Users can rate 1–5 stars
     - Show average rating on the recipe page and recipe cards
+
+
+# /calendar
+
+# /expenses
+
+# /notes
+
+# /grocery-lists
+
+# /ingredients
+
+# /explore
+
