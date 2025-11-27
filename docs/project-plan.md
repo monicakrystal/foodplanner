@@ -114,8 +114,11 @@ for now since its just me not necessary
     - Users can rate 0–5 stars
     - Show average rating on the recipe page and recipe cards
 
+# /saved
 
-# /add-recipe
+# /favorites
+
+# /add-recipe or /edit-recipe ?
 
   - page to add a recipe
   - needs to add photo or just title?
@@ -156,6 +159,11 @@ for now since its just me not necessary
   - any personal notes (always private)
 
 # /grocery-lists
+
+  - Queued Recipes
+  - Weekly Staples
+  - Daily Staples
+  - Shopping List
 
   - keep track of grocery run lists 
   - can see which recipes are referenced in that list

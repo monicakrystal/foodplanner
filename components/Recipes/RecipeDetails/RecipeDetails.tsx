@@ -24,6 +24,7 @@ const RecipeDetails = ({ recipe }: RecipeDetailsProps) => {
             </div>
 
             <div className={styles.jump}>
+                <button>ADD TO GROCERY LIST</button>
                 <button>JUMP TO RECIPE</button>
             </div>
 
