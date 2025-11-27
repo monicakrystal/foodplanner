@@ -1,22 +1,8 @@
 import RecipeThumbnail from "../../components/RecipeThumbnail/RecipeThumbnail"
 import styles from "./pages.module.css"
+import { exampleRecipes } from "../../data/recipes"
 
-const exampleRecipes = [
-  {
-    id: 1,
-    title: "Turkey Meatballs",
-    slug: "turkey-meatballs",
-    imageSrc: "/Meatballs.png",
-    labels: ["GF", "High Protein"],
-  },
-  {
-    id: 2,
-    title: "Bamia",
-    slug: "bamia",
-    imageSrc: "/Meatballs.png",
-    labels: ["Vegan", "GF"],
-  },
-];
+
 
 const Page = () => {
   return (
@@ -30,7 +16,7 @@ const Page = () => {
       <div className={styles.recipesContainer}>
       {exampleRecipes.map((recipe) => (
 
-        <RecipeThumbnail key={recipe.id} title={recipe.title}
+        <RecipeThumbnail key={recipe.id} title={recipe.title} slug={recipe.slug}
         imageSrc={recipe.imageSrc}
         labels={recipe.labels}/>
      

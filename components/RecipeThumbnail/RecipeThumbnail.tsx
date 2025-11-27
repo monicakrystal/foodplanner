@@ -1,5 +1,6 @@
 import Image from "next/image"
 import styles from "./RecipeThumbnail.module.css"
+import Link from "next/link";
 
 /*
   RecipeThumbnail Component
@@ -25,12 +26,14 @@ import styles from "./RecipeThumbnail.module.css"
 type RecipeThumbnailProps = {
 
   title: string;
+  slug: string;
   imageSrc: string;
   labels: string[];
 };
 
-const RecipeThumbnail = ({ title, imageSrc, labels}: RecipeThumbnailProps) => {
+const RecipeThumbnail = ({ title, slug, imageSrc, labels}: RecipeThumbnailProps) => {
   return (
+  <Link href={`/recipes/${slug}`}>
   <div className={styles.container}>
 
     <div className={styles.thumbnailImage}>
@@ -57,6 +60,7 @@ const RecipeThumbnail = ({ title, imageSrc, labels}: RecipeThumbnailProps) => {
      </div>
     
   </div>
+  </Link>
 
   )
 }
