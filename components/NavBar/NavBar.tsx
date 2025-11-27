@@ -12,7 +12,7 @@ import styles from "./NavBar.module.css"
   Behavior:
   - Uses Next.js <Link> for client-side navigation.
   - Styled using NavBar.module.css.
-  - Title ("Food Bestie") can later become a link to the homepage.
+
   
 
   Notes / Future Improvements:
@@ -38,7 +38,9 @@ const NavBar = () => {
   return (
     <div className={styles.navbar}>
       <div>
-        <h1>Food Bestie</h1>
+        <Link href="/" className={styles.titleLink}>
+          <h1>Food Bestie</h1>
+        </Link>
       </div>
 
       <div className={styles.buttons}>
