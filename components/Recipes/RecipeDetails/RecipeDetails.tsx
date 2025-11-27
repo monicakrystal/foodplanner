@@ -38,7 +38,12 @@ const RecipeDetails = ({ recipe }: RecipeDetailsProps) => {
         </div>
             
         <div className={styles.recipeParagraphs}>
-          <RecipeInfo/>
+          
+          <p>This recipe is very good. Blah blah blah</p>
+
+          
+          <RecipeInfo recipe={recipe} />
+        
         </div>    
       
  
