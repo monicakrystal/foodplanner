@@ -1,5 +1,6 @@
 import styles from "./RecipeDetails.module.css"
 import Image from "next/image"
+import RecipeInfo from "../RecipeInfo/RecipeInfo";
 
 type RecipeDetailsProps = {
   recipe: {
@@ -27,11 +28,17 @@ const RecipeDetails = ({ recipe }: RecipeDetailsProps) => {
             </div>
 
         </div>
+        
+        <div className={styles.mainImage}>
+  
 
-      <Image src={recipe.imageSrc} alt="Recipe Image"
-        width={400}
-        height={300} />
-
+          <Image src={recipe.imageSrc} alt="Recipe Image" width={400} height={300} />
+          
+        </div>
+            
+        <div className={styles.recipeParagraphs}>
+          <RecipeInfo/>
+        </div>    
       
  
     </div>
