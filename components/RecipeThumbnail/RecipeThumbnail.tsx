@@ -8,11 +8,11 @@ import styles from "./RecipeThumbnail.module.css"
   - Displays a static recipe card with an image, title, and dietary labels.
 
   Current State:
-  - Hard-coded  example content (image + labels).
-  - No props yet — temporary version while building the recipes page.
+  - Now accepts props for title, image, and labels.
+  - Content is no longer hard-coded.
+  - fake example data for now
 
   Future Improvements:
-  - Accept props: { imageSrc, title, labels }.
   - Wrap with <Link> to navigate to /recipes/[slug].
   - Add hover styling and reusable card layout.
 
@@ -21,23 +21,37 @@ import styles from "./RecipeThumbnail.module.css"
   - Styling comes from RecipeThumbnail.module.css.
 */
 
-const RecipeThumbnail = () => {
+type RecipeThumbnailProps = {
+
+  title: string;
+  imageSrc: string;
+  labels: string[];
+};
+
+const RecipeThumbnail = ({ title, imageSrc, labels}: RecipeThumbnailProps) => {
   return (
-    <div>
+  <div className={styles.container}>
       <Image
-        src="/Meatballs.png"
+        src={imageSrc}
         alt="Meatballs"
         width={400}
         height={300}
       />
 
-      <h3>Turkey Meatballs</h3>
+    <div className={styles.thumbnailDetails}>
+        
+    <div className={styles.title}>
+      <h3>{title}</h3>
+    </div>
 
       <div className={styles.labels}>
-        <span>GF</span>
-        <span>Vegan</span>
+     {labels.map(label => <span key={label}>{label}</span>)}
       </div>
-    </div>
+     
+     </div>
+    
+  </div>
+
   )
 }
 
