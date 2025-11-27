@@ -113,6 +113,10 @@ public/
 
 # /recipes/[slug]
 
+(when public add user to differeniate if users have same title?)
+for now since its just me not necessary
+"/username/recipes/${recipe-name}"
+
 - Create a recipe detail page for a single recipe
   - fetch recipe from db
   - URL pattern like `/recipes/turkey-meatballs` or `/recipes/[slug]`
