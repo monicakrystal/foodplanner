@@ -1,10 +1,10 @@
-import RecipeThumbnail from "../components/RecipeThumbnail/RecipeThumbnail"
+import RecipeThumbnail from "../../components/RecipeThumbnail/RecipeThumbnail"
+
 
 
 const page = () => {
   return (
     <div>
-
       <RecipeThumbnail/>
     </div>
   )
