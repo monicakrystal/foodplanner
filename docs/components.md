@@ -3,3 +3,6 @@
 # NavBar.tsx
 
 # RecipeThumbmail.tsx
+
+# RecipeDetails
+ 

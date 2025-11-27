@@ -1,4 +1,5 @@
 import Image from "next/image";
+import RecipeDetails from "../../../components/RecipeDetails/RecipeDetails";
 import { exampleRecipes } from "../../../data/recipes";
 import styles from "./page.module.css"
 
@@ -7,6 +8,28 @@ type RecipePageProps = {
     slug: string;
   }>;
 };
+
+/* 
+  Recipe Slug Page (/recipes/[slug])
+
+  Purpose:
+  - Receives the recipe slug from the URL (dynamic route).
+  - Finds the matching recipe from exampleRecipes (temporary mock DB).
+  - Passes the recipe data into the <RecipeDetails /> component.
+  - Keeps all layout and UI logic inside the RecipeDetails component.
+
+  Notes:
+  - Only responsibility: read slug → find recipe → pass recipe to component.
+
+  Future Improvements:
+  - store my recipes on a ts file for now since its personal use
+  - Replace exampleRecipes with real database fetch:
+      const recipe = await getRecipeBySlug(slug)
+  - Add loading and error states.
+  - Support private/public recipes.
+  - Add metadata for SEO based on recipe details.
+  - Add analytics / view count 
+*/
 
 export default async function Page({ params }: RecipePageProps) {
 
@@ -20,21 +43,7 @@ export default async function Page({ params }: RecipePageProps) {
 
   return (
     <div className={styles.recipeSlugContainer}>
-        <div className={styles.recipeTitle}>
-            <h1>{recipe.title}</h1>
-            <span>⭐️ ⭐️ ⭐️ ⭐️ ⭐️</span>
-            <span>{recipe.labels.join(", ")}</span>
-
-        </div>
-<div className={styles.jump}>
-  <button>JUMP TO RECIPE</button>
-</div>
-      <Image src={recipe.imageSrc} alt="Recipe Image"
-        width={400}
-        height={300} />
-
-      
- 
+        <RecipeDetails recipe={recipe} />
     </div>
   );
 }
