@@ -1,13 +1,14 @@
 import RecipeThumbnail from "../../components/RecipeThumbnail/RecipeThumbnail"
+import styles from "./pages.module.css"
 
 
 
-const page = () => {
+const Page = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <RecipeThumbnail/>
     </div>
   )
 }
 
-export default page
+export default Page
