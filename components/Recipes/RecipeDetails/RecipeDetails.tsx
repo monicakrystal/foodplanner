@@ -24,6 +24,8 @@ const RecipeDetails = ({ recipe }: RecipeDetailsProps) => {
             </div>
 
             <div className={styles.jump}>
+                <button>SAVE</button>
+                <button>FAVORITE</button>
                 <button>ADD TO GROCERY LIST</button>
                 <button>JUMP TO RECIPE</button>
             </div>
@@ -37,15 +39,17 @@ const RecipeDetails = ({ recipe }: RecipeDetailsProps) => {
           
         </div>
             
-        <div className={styles.recipeParagraphs}>
-          
+        <div className={styles.recipeSummary}>
+              
+          <div className={styles.recipeParagraphs}>
           <p>This recipe is very good. Blah blah blah</p>
-
+          </div>   
           
-          <RecipeInfo recipe={recipe} />
-        
-        </div>    
-      
+          <div className={styles.recipeInfo}>
+            <RecipeInfo recipe={recipe} />
+          </div>
+
+        </div>
  
     </div>
   )

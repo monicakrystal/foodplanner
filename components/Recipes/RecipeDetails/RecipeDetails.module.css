@@ -4,13 +4,18 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+ 
+
+
 }
+
+
 
 .recipeTitle {
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    /* align-items: flex-end; */
 }
 
 .recipeTitle h1 {
@@ -24,3 +29,29 @@
 }
 
 
+.jump {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.jump button {
+    padding: 8px 10px;
+
+    color: rgb(56, 56, 56);
+    margin: 3px 0;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    letter-spacing: .5px;
+    font-size: 14px;
+}
+.jump button:hover {
+          background-color: rgb(255, 206, 250);
+
+ 
+}
+
+.recipeParagraphs {
+    margin: 20px 0;
+}
