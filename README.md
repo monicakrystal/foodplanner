@@ -27,6 +27,7 @@ a cute website for me to plan my meals & save my favorite recipes
 
 # Folder Structure 
 
+```txt
 app/
   calendar/
   expenses/
@@ -50,9 +51,9 @@ public/
 
 docs/
   project-plan.md  
+```
 
-
-⭐️⭐️⭐️ DOCUMENTATION ⭐️⭐️⭐️⭐️
+# ⭐️ DOCUMENTATION 
 
 # Project Plan
 
