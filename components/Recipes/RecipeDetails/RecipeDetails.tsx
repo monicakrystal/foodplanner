@@ -1,6 +1,8 @@
+"use client"
 import styles from "./RecipeDetails.module.css"
 import Image from "next/image"
 import RecipeInfo from "../RecipeInfo/RecipeInfo";
+import { useRef } from "react";
 
 type RecipeDetailsProps = {
   recipe: {
@@ -13,6 +15,16 @@ type RecipeDetailsProps = {
 };
 
 const RecipeDetails = ({ recipe }: RecipeDetailsProps) => {
+
+  const recipeRef = useRef<HTMLDivElement | null>(null);
+
+  const jumpToRecipe = () => {
+    recipeRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+  }
+
   return (
     <div className={styles.recipeSlugContainer}>
         <div className={styles.recipeTitle}>
@@ -27,8 +39,9 @@ const RecipeDetails = ({ recipe }: RecipeDetailsProps) => {
                 <button>SAVE</button>
                 <button>FAVORITE</button>
                 <button>ADD TO GROCERY LIST</button>
-                <button>JUMP TO RECIPE</button>
+                <button onClick={jumpToRecipe}>JUMP TO RECIPE</button>
             </div>
+
 
         </div>
         
@@ -45,7 +58,7 @@ const RecipeDetails = ({ recipe }: RecipeDetailsProps) => {
           <p>This recipe is very good. Blah blah blah</p>
           </div>   
           
-          <div className={styles.recipeInfo}>
+          <div className={styles.recipeInfo} ref={recipeRef}>
             <RecipeInfo recipe={recipe} />
           </div>
 
