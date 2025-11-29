@@ -1,4 +1,6 @@
 import Image from "next/image"
+import { ImPrinter } from "react-icons/im";
+import { FaRegHeart } from "react-icons/fa";
 import styles from "./RecipeInfo.module.css"
 
 type RecipeInfoProps = {
@@ -8,6 +10,7 @@ type RecipeInfoProps = {
     description?: string;
     author?: string;
   };
+
 };
 
 const RecipeInfo = ({recipe} : RecipeInfoProps) => {
@@ -23,8 +26,8 @@ const RecipeInfo = ({recipe} : RecipeInfoProps) => {
 
             <div className={styles.side}>
                 <div className={styles.buttons}>
-                    <button>PRINT</button>
-                    <button>SAVE</button>
+                    <button> <ImPrinter/> PRINT</button>
+                    <button> <FaRegHeart/> SAVE</button>
                     <button>FAVORITES</button>
                 </div>
                 

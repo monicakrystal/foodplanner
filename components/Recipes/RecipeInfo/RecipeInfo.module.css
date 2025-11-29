@@ -21,8 +21,12 @@ font-size: 18px;
 .buttons button {
     border: 1px solid rgb(0, 0, 0);
     padding: 4px;   
-    margin: 4px 0
-}
+    margin: 4px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+  }
 
 .rating {
     margin: 10px 0 0 0;
