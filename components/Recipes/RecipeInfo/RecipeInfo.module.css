@@ -36,12 +36,22 @@ font-size: 18px;
 }
 
 
+.timeContainer > .time {
+  border: .5px solid black;
+  border-inline: none;
+}
+
+.timeContainer > .time:not(:last-child) {
+  border-right: 0.5px solid black;
+}
+
+
 .time {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5px 10px;
-    border: .5px solid black;
+    padding: 5px 20px;
+    
 }
 
 .fastText {

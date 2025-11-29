@@ -18,7 +18,7 @@ const RecipeInfo = ({recipe} : RecipeInfoProps) => {
             <div className={styles.title}>
                 <h2>{recipe.title}</h2>
                 <p>{recipe.description} </p>
-                <span>Author: {recipe.author}</span>
+                <span>Author {recipe.author}</span>
             </div>
 
             <div className={styles.side}>
