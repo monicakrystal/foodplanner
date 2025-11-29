@@ -4,7 +4,7 @@ export const exampleRecipes = [
     title: "Turkey Meatballs",
     slug: "turkey-meatballs",
     imageSrc: "/Meatballs.png",
-    labels: ["GF", "High Protein"],
+    labels: ["GF"],
   },
   {
     id: 2,

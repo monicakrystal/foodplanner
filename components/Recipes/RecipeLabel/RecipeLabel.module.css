@@ -1,0 +1,37 @@
+.vegan {
+  background-color: #4caf50; /* green */
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 4px 8px;
+  border-radius: 2000px; /* pill */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+}
+
+.gf {
+  border: 2px solid #ffd062;
+  color: #000;
+  font-weight: 600;
+  font-size: 17px;
+  width: 36px;
+  height: 35px;
+  background-color: #ffd062;
+  border-radius: 50%; /* circle */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.default {
+  background-color: #f3f3f3;
+  color: #333;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,5 +1,6 @@
 import Image from "next/image"
 import styles from "./RecipeThumbnail.module.css"
+import RecipeLabel from "../RecipeLabel/RecipeLabel";
 import Link from "next/link";
 
 /*
@@ -53,9 +54,12 @@ const RecipeThumbnail = ({ title, slug, imageSrc, labels}: RecipeThumbnailProps)
       <h3>{title}</h3>
     </div>
 
-      <div className={styles.labels}>
-     {labels.map(label => <span key={label}>{label}</span>)}
-      </div>
+     <div className={styles.labels}>
+      {labels.map((label) => (
+        <RecipeLabel key={label} label={label} />
+      ))}
+    </div>
+
      
      </div>
     
