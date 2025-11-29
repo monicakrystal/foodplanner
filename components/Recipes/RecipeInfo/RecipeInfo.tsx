@@ -7,6 +7,14 @@ type RecipeInfoProps = {
   recipe: {
     imageSrc: string;
     title: string;
+    course: string,
+    cuisine: string
+    freezerFriendly: string,
+    storage: string,
+    ingredients: "JSON",
+    instructions: "JSON",
+    notes: string
+    nutrition: "JSON"
     description?: string;
     author?: string;
   };
@@ -63,11 +71,29 @@ const RecipeInfo = ({recipe} : RecipeInfoProps) => {
         </div>
 
         <div className={styles.fastText}>
-        <h3>Servings</h3>
+        <div className={styles.text}>
+            <h3>Servings</h3> 
+        </div>
+      
+
+        <div className={styles.text}>
         <h3>Course</h3>
+        <p>{recipe.course}</p>
+        </div>
+
+        <div className={styles.text}>
         <h3>Cuisine</h3>
+        <p>{recipe.cuisine}</p>
+        </div>
+
+        <div className={styles.text}>
         <h3>Freezer Friendly</h3>
+        </div>
+        
+        <div className={styles.text}>
         <h3>Storage</h3>
+        </div>
+
         </div>
 
         <div className={styles.ingredients}>

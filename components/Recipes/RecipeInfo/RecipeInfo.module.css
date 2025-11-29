@@ -83,3 +83,9 @@ font-size: 18px;
 .instructions li {
   margin-bottom: 8px;
 }
+
+.text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
