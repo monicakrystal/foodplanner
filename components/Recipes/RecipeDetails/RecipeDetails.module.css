@@ -11,6 +11,13 @@
 
 
 
+.labels {
+   display: flex;
+   
+}
+
+
+
 .recipeTitle {
     margin-bottom: 20px;
     display: flex;

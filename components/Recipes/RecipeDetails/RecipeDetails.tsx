@@ -3,6 +3,7 @@ import styles from "./RecipeDetails.module.css"
 import Image from "next/image"
 import RecipeInfo from "../RecipeInfo/RecipeInfo";
 import { useRef } from "react";
+import RecipeLabel from "../RecipeLabel/RecipeLabel";
 
 type RecipeDetailsProps = {
   recipe: {
@@ -31,7 +32,13 @@ const RecipeDetails = ({ recipe }: RecipeDetailsProps) => {
 
             <div className={styles.titleText}>
                 <h1>{recipe.title}</h1>
-                 <span>{recipe.labels.join(", ")}</span>
+               
+<div className={styles.labels}>
+  
+
+                 {recipe.labels.map((label) => (
+        <RecipeLabel key={label} label={label} />
+      ))}</div>
                 <span>⭐️ ⭐️ ⭐️ ⭐️ ⭐️</span>
                
             </div>
