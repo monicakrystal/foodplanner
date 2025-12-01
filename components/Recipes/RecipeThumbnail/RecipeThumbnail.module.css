@@ -12,6 +12,11 @@
     font-size: 28px;
 }
 
+
+.title h3:hover {
+    color: rgb(203, 100, 40);
+}
+
 .labels  {
     margin-top: 5px;
 }

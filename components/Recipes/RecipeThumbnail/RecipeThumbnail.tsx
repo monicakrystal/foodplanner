@@ -1,4 +1,4 @@
-import Image from "next/image"
+ import Image from "next/image"
 import styles from "./RecipeThumbnail.module.css"
 import RecipeLabel from "../RecipeLabel/RecipeLabel";
 import Link from "next/link";
