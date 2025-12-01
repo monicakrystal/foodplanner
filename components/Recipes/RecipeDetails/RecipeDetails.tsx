@@ -31,8 +31,9 @@ const RecipeDetails = ({ recipe }: RecipeDetailsProps) => {
 
             <div className={styles.titleText}>
                 <h1>{recipe.title}</h1>
+                 <span>{recipe.labels.join(", ")}</span>
                 <span>⭐️ ⭐️ ⭐️ ⭐️ ⭐️</span>
-                <span>{recipe.labels.join(", ")}</span>
+               
             </div>
 
             <div className={styles.jump}>
@@ -48,7 +49,7 @@ const RecipeDetails = ({ recipe }: RecipeDetailsProps) => {
         <div className={styles.mainImage}>
   
 
-          <Image src={recipe.imageSrc} alt="Recipe Image" width={400} height={300} />
+          <Image src={recipe.imageSrc} alt="Recipe Image" width={500} height={500} />
           
         </div>
             
