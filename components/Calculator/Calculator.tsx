@@ -1,3 +1,4 @@
+"use client"
 import styles from "./Calculator.module.css"
 import { myRecipes } from "../../data/recipes"
 import { useState } from "react"
@@ -27,8 +28,8 @@ Future Improvements:
 
 const Calculator = () => {
 
-    // stores selected recipes user clicked
-    const [selectedRecipes, setSelectedRecipes] = useState<string[]>()
+    // stores selected recipes user clicked; start as empty array
+    const [selectedRecipes, setSelectedRecipes] = useState<string[]>([])
     
 
     // this function adds or removes a recipe to the list
