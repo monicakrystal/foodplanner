@@ -94,29 +94,53 @@ const Calculator = () => {
         })}
         </div>
 
+            <div className={styles.totalsSection}>
+        
 
-        <div className={styles.totals}>
-        <div className={styles.total}>
-        Protein:
-        </div>
-        <div className={styles.total}>
-        Calories:
-        </div>
-        <div className={styles.total}>
-        Carbs:
-        </div>
-        <div className={styles.total}>
-        Soluble Fiber:
-        </div>
-        <div className={styles.total}>
-        Insoluble Fiber:
-        </div>
+                <div className={styles.totals}>
+                    <div className={styles.total}>
+                    Protein:
+                    </div>
 
-        <div className={styles.calculation}>
-          
-        </div>
-        </div>
+                    <div className={styles.total}>
+                    Calories:
+                    </div>
 
+                    <div className={styles.total}>
+                    Carbs:
+                    </div>
+
+                    <div className={styles.total}>
+                    Soluble Fiber:
+                    </div>
+                    
+                    <div className={styles.total}>
+                    Insoluble Fiber:
+                    </div>
+                </div>
+                    
+                
+                <div className={styles.totalsCalculated}>
+                  
+             
+                <div className={styles.calculation}>
+                    {totals.protein_g.toFixed(1)} g
+                </div>
+                 <div className={styles.calculation}>
+                    {totals.calories}
+                </div>
+                 <div className={styles.calculation}>
+                    {totals.carbs_g.toFixed(1)} g
+                </div>
+                 <div className={styles.calculation}>
+                    {totals.fiber_soluble_g.toFixed(1)} g
+                </div>
+                 <div className={styles.calculation}>
+                    {totals.fiber_insoluble_g.toFixed(1)} g
+                </div>
+                   </div>
+
+            </div>
     </div>
   )
 }

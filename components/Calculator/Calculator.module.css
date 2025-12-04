@@ -26,6 +26,7 @@
     color: black;
 }
 
-.totals {
-    margin: 20px 0;
+.totalsSection {
+    display: flex;
+  
 }
