@@ -1,6 +1,6 @@
 import styles from "./Calculator.module.css"
 import { myRecipes } from "../../data/recipes"
-const Calculator = () => {
+import { useState } from "react"
 
 /* 
 
@@ -25,6 +25,55 @@ Future Improvements:
 */
 
 
+const Calculator = () => {
+
+    // stores selected recipes user clicked
+    const [selectedRecipes, setSelectedRecipes] = useState<string[]>()
+    
+
+    // this function adds or removes a recipe to the list
+    const toggleRecipe = (name: string) => {
+    setSelectedRecipes((prev) =>
+      prev.includes(name)
+        ? prev.filter((n) => n !== name) 
+        : [...prev, name] 
+    );
+  };
+
+  // this gets the nutrition data of the recipes in the selected list
+  const chosenRecipes = myRecipes.filter((recipe) =>
+    selectedRecipes.includes(recipe.name)
+  );
+    
+
+  const totals = chosenRecipes.reduce(
+  (acc, recipe) => {
+    const n = recipe.nutrition;
+
+    return {
+      calories: acc.calories + n.calories,
+      protein_g: acc.protein_g + n.protein_g,
+      carbs_g: acc.carbs_g + n.carbs_g,
+      fat_g: acc.fat_g + n.fat_g,
+      fiber_total_g: acc.fiber_total_g + n.fiber_total_g,
+      fiber_soluble_g: acc.fiber_soluble_g + n.fiber_soluble_g,
+      fiber_insoluble_g: acc.fiber_insoluble_g + n.fiber_insoluble_g,
+    };
+  },
+  // starting values
+  {
+    calories: 0,
+    protein_g: 0,
+    carbs_g: 0,
+    fat_g: 0,
+    fiber_total_g: 0,
+    fiber_soluble_g: 0,
+    fiber_insoluble_g: 0,
+  }
+);
+
+ 
+
   return (
     <div className={styles.calculatorSection}>
         <div className={styles.recipes}>
@@ -42,8 +91,24 @@ Future Improvements:
         </div>
 
         <div className={styles.totals}>
-        <div className={styles.className}>
-        
+        <div className={styles.total}>
+        Protein:
+        </div>
+        <div className={styles.total}>
+        Calories:
+        </div>
+        <div className={styles.total}>
+        Carbs:
+        </div>
+        <div className={styles.total}>
+        Soluble Fiber:
+        </div>
+        <div className={styles.total}>
+        Insoluble Fiber:
+        </div>
+
+        <div className={styles.calculation}>
+          
         </div>
         </div>
 

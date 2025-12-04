@@ -31,6 +31,24 @@ export const exampleRecipes = [
   },
 ];
 
+
+
+export type Nutrition = {
+  calories: number;
+  protein_g: number;
+  carbs_g: number;
+  fat_g: number;
+  fiber_total_g: number;
+  fiber_soluble_g: number;
+  fiber_insoluble_g: number;
+};
+
+export type SimpleRecipe = {
+  name: string;
+  nutrition: Nutrition;
+};
+
+
 export const myRecipes = [
   {
     name: "Oat Shake (1 cup serving)",
@@ -81,3 +99,5 @@ export const myRecipes = [
     }
   }
 ];
+
+
