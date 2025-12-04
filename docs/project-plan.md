@@ -133,6 +133,14 @@ for now since its just me not necessary
   - self rating
   - post to db
   
+# /calculator
+
+ - page to calculate protein, fiber, carbs, calories
+ - drag and drop
+ - responsive
+ - like an excel sheet but visually pleasing and user friendly
+ - clean and simple design
+
 
 # /calendar
 
@@ -153,6 +161,7 @@ for now since its just me not necessary
   - able to track recipe cost?
   - any other expenses? kitchen items.
   - able to see daily costs, weekly, monthly.
+  - able to see weekly costs base on the recipes I choose
 
 # /notes
 
