@@ -5,17 +5,21 @@ import { useState } from "react"
 
 /* 
 
-Steps:
-    - Show All recipes
-    - Be able to select recipes and the totals are automatically calculated
-    - check box or selected ones have hover & border color
+To do:
+    - should this be in calender instead?
+    - drag and drop into calendar or...sep calculations part and a add to calender button?
+    - need to be able to add multiple of something
+    - an arrow key to show measurements and ingredients and recipe.
+    - need to calculate diversity
+    
 
 Goal:
     - Allow the user to drag and drop recipes into a day plan.
     - Automatically calculate and display total nutrition (calories, protein, carbs, fat, fiber).
 
 Current Scope:
-    - Focus only on the calculation logic and rendering basic totals.
+    - Shows All recipes
+    - Able to select or deselect recipes and the totals are automatically calculated
     - Ignore drag-and-drop and UI polish for now.
 
 Future Improvements: 
