@@ -1,7 +1,13 @@
 import styles from "./Calculator.module.css"
+import { myRecipes } from "../../data/recipes"
 const Calculator = () => {
 
 /* 
+
+Steps:
+    - Show All recipes
+    - Be able to select recipes and the totals are automatically calculated
+    - check box or selected ones have hover & border color
 
 Goal:
     - Allow the user to drag and drop recipes into a day plan.
@@ -21,7 +27,25 @@ Future Improvements:
 
   return (
     <div className={styles.calculatorSection}>
+        <div className={styles.recipes}>
+            {myRecipes.map((recipe) => ( 
 
+            <div key={recipe.name} className={styles.recipe}>
+            {recipe.name}
+            </div>
+       
+            ))}
+
+            <div className={styles.checkbox}>
+          
+            </div>
+        </div>
+
+        <div className={styles.totals}>
+        <div className={styles.className}>
+        
+        </div>
+        </div>
 
     </div>
   )
