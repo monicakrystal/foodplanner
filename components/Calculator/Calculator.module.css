@@ -20,6 +20,11 @@
     margin: 5px 0;
 }
 
+.selected, .recipe:hover {
+    border: 1px solid rgb(28, 138, 234);
+    background-color: rgb(145, 209, 255);
+    color: black;
+}
 
 .totals {
     margin: 20px 0;

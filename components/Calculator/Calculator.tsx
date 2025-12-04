@@ -78,18 +78,22 @@ const Calculator = () => {
   return (
     <div className={styles.calculatorSection}>
         <div className={styles.recipes}>
-            {myRecipes.map((recipe) => ( 
+        {myRecipes.map((recipe) => {
+            const isSelected = selectedRecipes.includes(recipe.name);
 
-            <div key={recipe.name} className={styles.recipe}>
-            {recipe.name}
-            </div>
-       
-            ))}
-
-            <div className={styles.checkbox}>
-          
-            </div>
+            return (
+            <button
+                key={recipe.name}
+                type="button"
+                className={`${styles.recipe} ${isSelected ? styles.selected : ""}`}
+                onClick={() => toggleRecipe(recipe.name)}
+            >
+                {recipe.name}
+            </button>
+            );
+        })}
         </div>
+
 
         <div className={styles.totals}>
         <div className={styles.total}>
