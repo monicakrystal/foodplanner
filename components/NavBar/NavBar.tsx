@@ -45,6 +45,7 @@ const NavBar = () => {
 
       <div className={styles.buttons}>
         <Link href="/recipes">Recipes</Link>
+         <Link href="/calculator">Calculator</Link>
         <Link href="/calendar">Calendar</Link>
         <Link href="/expenses">Expenses</Link>
         <Link href="/notes">Notes</Link>
