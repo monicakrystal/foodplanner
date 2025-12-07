@@ -53,14 +53,23 @@ export const myRecipes = [
   {
     name: "Oat Shake (1 cup serving)",
     nutrition: {
-      calories: 475,
-      protein_g: 9.5,
+      calories: 672,
+      protein_g: 27,
       carbs_g: 49.5,
       fat_g: 26.75,
       fiber_total_g: 6,
       fiber_soluble_g: 2.6,
       fiber_insoluble_g: 3.4
-    }
+    },
+    ingredients: [ 
+      "1 cup of Elmhurst Almond Milk",
+      "1/2 cup of One Degree Oats", 
+      "1 banana",
+      "1 tablespoon of avocado oil",
+      "2 tablespoons of maple syrup",
+      "1 tablespoon of ground flaxseeds",
+      "1/2 cup of liquid egg whites"
+    ]    
   },
   {
     name: "Lamb & Broccoli Skillet (1 serving)",
