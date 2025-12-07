@@ -74,8 +74,8 @@ export const myRecipes = [
   {
     name: "Lamb & Broccoli Skillet (1 serving)",
     nutrition: {
-      calories: 451,
-      protein_g: 26,
+      calories: 460,
+      protein_g: 25,
       carbs_g: 9.7,
       fat_g: 33.7,
       fiber_total_g: 2.4,
@@ -86,10 +86,10 @@ export const myRecipes = [
   {
     name: "Gluten Free Chicken Breast (1 serving)",
     nutrition: {
-      calories: 459,
-      protein_g: 74,
+      calories: 230,
+      protein_g: 44,
       carbs_g: 3,
-      fat_g: 15,
+      fat_g: 5,
       fiber_total_g: 1.7,
       fiber_soluble_g: 0.5,
       fiber_insoluble_g: 1.2
@@ -98,10 +98,10 @@ export const myRecipes = [
     {
     name: "Daikon Turkey Skillet (1 serving)",
     nutrition: {
-      calories: 213,
-      protein_g: 24,
+      calories: 285,
+      protein_g: 42,
       carbs_g: 6.8,
-      fat_g: 9.1,
+      fat_g: 12,
       fiber_total_g: 2.6,
       fiber_soluble_g: 1.1,
       fiber_insoluble_g: 1.5
